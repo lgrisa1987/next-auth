@@ -24,7 +24,7 @@ const FormSchema = z
       .string()
       .min(2, 'First name must be at least characters')
       .max(45, 'First name must be less than 45 characters')
-      .regex(new RegExp('^[a-zA-Z]+$'), 'No special character allowed!'),
+      .regex(new RegExp('^[a-zA-Zñ]+$'), 'No special character allowed!'),
     lastName: z
       .string()
       .min(2, 'Last name must be at least characters')
